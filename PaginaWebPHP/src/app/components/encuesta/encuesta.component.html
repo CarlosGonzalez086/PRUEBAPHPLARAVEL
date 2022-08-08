@@ -1,0 +1,277 @@
+{{page_title}}
+<body>
+<form class="col-md-5 ml-0 pl-0" #respuestasForm="ngForm" (ngSubmit)="onSubmit(respuestasForm)">
+ <div class="form-group">
+    <p id="p1">¿A qué sector se dedica la empresa?</p>
+    <label for="">
+        <input type="radio"  class="form" name="Sector" value="Agricola"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        checked> Agricultura, cría y explotación de animales, aprovechamiento forestal,
+        pesca y caza
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Mineria"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Minería
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Energia"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Generación, transmisión, distribución y comercialización de energía
+        eléctrica, suministro de agua y de gas natural por ductos al consumidor
+        final
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Construcción"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Construcción
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Manufactura"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Industrias manufactureras
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="ComercioA"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Comercio al por mayor
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="ComercioB"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Comercio al por menor
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Transporte"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Transportes, correos y almacenamiento
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Informacion"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Información en medios masivos
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Finacieros" 
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Servicios financieros y de seguros
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Casas"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Servicios inmobiliarios y de alquiler de bienes muebles e intangibles
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Ciencia" 
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Servicios profesionales, científicos y técnicos
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Corporativos" 
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Corporativos
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Apoyo"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Servicios de apoyo a los negocios y manejo de residuos, y servicios de
+        remediación
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Educacion"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Servicios educativos
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Salud"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Servicios de salud y de asistencia social
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Cultural"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Servicios de esparcimiento culturales y deportivos, y otros servicios
+        recreativos
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Sector" value="Hospedaje"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Servicios de alojamiento temporal y de preparación de alimentos y bebidas
+    </label>
+    <label for="">
+        <input type="radio"class="form" name="Sector" value="Gobierno"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta1"
+        >Otros servicios excepto actividades gubernamentales
+    </label>
+</div>
+<div class="form-group">
+    <p id="p1">3. Número de empleados:</p>
+    <label for="">
+        <input type="radio" class="form" name="NumEmp" value="A"
+        class="inputRadio"#name="ngModel" [(ngModel)]="respuestas.respuesta2"
+        >1 a 10 
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="NumEmp" value="B"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta2"
+        >11 a 50
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="NumEmp" value="C"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta2"
+        >51 a 250
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="NumEmp" value="D"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta2"
+        >251 o más 
+    </label>
+</div>
+<div class="form-group">
+    <p id="p1">4. ¿Este año habrá entrega de reparto de utilidades?</p>
+    <label for="">
+        <input type="radio" class="form" name="RDE" value="Si"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta3"
+        >Si 
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RDE" value="No"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta3"
+        >No
+    </label>
+</div>
+<div class="form-group">
+    <p id="p1">5. En comparación con el año anterior ¿Cómo será el monto repartido de PTU?</p>
+    <label for="">
+        <input type="radio" class="form" name="Comp" value="Mayor"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta4"
+        >Mayor 
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Comp" value="Igual"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta4"
+        >Igual
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="Comp" value="Menor"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta4"
+        >Menor
+    </label>
+</div>
+<div class="form-group">
+    <p id="p1">5.1 ¿Cuáles fueron las razones por las que el monto de reparto de utilidades fue
+        mayor?</p>
+    <label for="">
+        <input type="radio" class="form" name="RPDE" value="A"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta5"
+        >Aumento en la productividad de las y los colaboradores
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDE" value="B"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta5"
+        >Aumento de ventas
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDE" value="C"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta5"
+        >Entorno económico favorable
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDE" value="D" 
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta5"
+        >Nuevas oportunidades de negocio
+    </label>
+</div>
+<div class="form-group">
+    <p id="p1">5.2 ¿Cuáles fueron las razones por las que habrá menor reparto de utilidades?</p>
+    <label for="">
+        <input type="radio" class="form" name="RPDEN" value="A"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta6"
+        >Disminución en la productividad de las y los colaboradores
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDEN" value="B"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta6"
+        >Afectaciones por inseguridad
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDEN" value="C"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta6"
+        >Afectaciones por el entorno político y económico
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDEN" value="D"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta6"
+        >Continuación de la pandemia COVID-19
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDEN" value="E"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta6"
+        >Problemas para mejorar la innovación y los procesos al interior de la
+        empresa
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDEN" value="F"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta6"
+        >Complicaciones por la inflación
+    </label>
+</div>
+<div class="form-group">
+    <p id="p1">Días de salario estimado a pagar por PTU ejercicio 2021</p>
+    <label for="">
+        <input type="text" class="form" name="RPDEN21" value="text"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta7"
+        >Pregunta abierta (condicionado a número decimal)
+    </label>
+</div> 
+<div class="form-group">
+    <p id="p1">¿Cuáles fueron las razones por las que no hubo reparto de utilidades?</p>
+    <label for="">
+        <input type="radio" class="form" name="RPDENN" value="A"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta8"
+        >Disminución en la productividad de las y los colaboradores
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDENN" value="B"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta8"
+        >Afectaciones por inseguridad
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDENN" value="C"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta8"
+        >Afectaciones por el entorno político y económico
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDENN" value="D"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta8"
+        >Continuación de la pandemia COVID-19
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDENN" value="E"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta8"
+        >Problemas para mejorar la innovación y los procesos al interior de la
+        empresa
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDENN" value="F"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta8"
+        >Complicaciones por la inflación
+    </label>
+</div>
+<div class="form-group">
+    <p id="p1">El año anterior, ¿hubo reparto de PTU?</p>
+    <label for="">
+        <input type="radio" class="form" name="RPDENNA" value="Si"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta9"
+        >Si
+    </label>
+    <label for="">
+        <input type="radio" class="form" name="RPDENNA" value="No"
+        class="inputRadio" #name="ngModel" [(ngModel)]="respuestas.respuesta9"
+        >No
+    </label>
+</div>
+<input type="submit" value="Enviar" class="btn btn-success">  
+</form>
+
+</body>

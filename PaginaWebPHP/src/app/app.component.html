@@ -1,0 +1,42 @@
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                
+            </h1>
+            <p id="description">
+                Gracias por su tiempo por resolver la encuesta
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Ingresa tu email" required>
+            </div>
+
+            <div class="form-group">
+                <p id="p1">Contestaré esta encuesta respecto a la experiencia de la empresa que represento:</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> Acepto
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >No Acepto
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn" [routerLink]="['encuesta']">Enviar</button>
+            </div>
+        </form>
+    </div>
+  </body>
+  <router-outlet></router-outlet>
